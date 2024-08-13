@@ -1331,4 +1331,26 @@ window["commonninja-js-sdk"] = (function (e) {
             }
         }
         t.a = i;
-    };
+    },
+    function (e, t, n) {
+        "use strict";
+        function i(e, t, n, i) {
+            if (!e.placeholderElm.querySelector(".commonninja-ribbon")) {
+                var o = n || "Powered by Common Ninja",
+                    r = t
+                        ? "color: #16171B !important;\n    direction: ltr !important;\n    text-decoration: none;\n    display: inline-flex !important;\n    align-items: center;\n    justify-content: center;\n    flex-wrap: wrap;\n    background: #fefefe;\n    border-radius: 50em;\n    box-shadow: 0 1px 5px rgba(0,0,0,0.1);\n    padding: 5px 10px;"
+                        : "",
+                    a = t ? "height: 17px;\n    width: 17px;\n    border-radius: 50em;\n    margin-right: 5px;" : "",
+                    c = t ? "line-height: 1.4em;\n    padding-top: 2px;" : "",
+                    l = '<a style="'
+                        .concat(r, '" className="commonninja-ribbon-link" href="')
+                        .concat(i || "https://www.commoninja.com", '?utm_medium=Embed"} target="_blank" rel="noopener noreferrer">\n      <img style="')
+                        .concat(a, '" src="')
+                        .concat("https://website-assets.commoninja.com/distribution/1677684284220_icon.png", '" alt="Common Ninja" />\n      <span style="')
+                        .concat(c, '">')
+                        .concat(o, "</span>\n    </a>"),
+            }
+        }
+        t.a = i;
+    },
+]).default;
